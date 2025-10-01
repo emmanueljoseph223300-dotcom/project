@@ -1,18 +1,18 @@
-/* General Reset */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   line-height: 1.6;
-  background: #f5f5f5;
+  background: #f9f9f9;
   color: #333;
 }
 
-/* Navigation */
+/* ===== NAVBAR ===== */
 header {
   background: #111;
   padding: 15px 30px;
@@ -47,9 +47,18 @@ nav a:hover {
 .logo {
   color: #00d4ff;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
-/* Hero Section with Animated Gradient */
+.btn-nav {
+  background: #00d4ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #111;
+  font-weight: bold;
+}
+
+/* ===== HERO ===== */
 .hero {
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -89,7 +98,7 @@ nav a:hover {
   background: #00a3c4;
 }
 
-/* Section Styling */
+/* ===== SECTIONS ===== */
 section {
   padding: 80px 20px;
 }
@@ -99,7 +108,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Projects */
+/* ===== PROJECTS ===== */
 .project-list {
   display: flex;
   justify-content: center;
@@ -121,7 +130,7 @@ h2 {
   transform: translateY(-8px);
 }
 
-/* Forms */
+/* ===== FORMS ===== */
 .form-section {
   background: #fff;
 }
@@ -141,7 +150,9 @@ h2 {
   font-weight: bold;
 }
 
-.form-box input {
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 12px;
@@ -165,10 +176,17 @@ h2 {
   background: #00a3c4;
 }
 
-/* Footer */
+.form-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 20px;
   background: #111;
   color: #fff;
 }
+
