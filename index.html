@@ -5,29 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Script Hive | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- ===== HEADER ===== -->
   <header>
     <nav>
       <h1 class="logo">Script Hive</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#signup">Sign Up</a></li>
-        <li><a href="#signin">Sign In</a></li>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="index.html#signup" class="btn-nav">Sign Up</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ===== HERO ===== -->
   <section id="home" class="hero">
-    <div class="overlay"></div>
     <div class="hero-content">
       <h2>Hello, I'm <span>Emmanuel Joseph</span></h2>
-      <p>Aspiring Web Developer, and Owner of Script Hive</p>
+      <p>Aspiring Web Developer & Owner of Script Hive</p>
       <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
@@ -36,9 +37,9 @@
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      Hi! I’m learning web development and this is my first portfolio site.
-      I enjoy building clean, simple, and responsive websites. I can help you
-      build a simple web page as cheap as $3–$10.
+      Hi! I’m learning web development and this is my first professional portfolio.  
+      I enjoy building clean, responsive, and interactive websites.  
+      My goal is to create affordable websites starting from just <strong>$3</strong>.
     </p>
   </section>
 
@@ -46,9 +47,9 @@
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-list">
-      <div class="project-card">Coming Soon</div>
-      <div class="project-card">Coming Soon</div>
-      <div class="project-card">Coming Soon</div>
+      <div class="project-card">Portfolio Website</div>
+      <div class="project-card">E-commerce Demo</div>
+      <div class="project-card">Blog Platform</div>
     </div>
   </section>
 
@@ -56,43 +57,29 @@
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:scripthive1@gmail.com">scripthive1@gmail.com</a></p>
-    <p>
-      GitHub:
-      <a href="https://github.com/emmanueljoseph223300-dotcom" target="_blank">
-        github.com/emmanueljoseph223300-dotcom
-      </a>
-    </p>
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/script-hive" target="_blank">
-        linkedin.com/in/script-hive
-      </a>
-    </p>
+    <p>GitHub: <a href="https://github.com/emmanueljoseph223300-dotcom" target="_blank">github.com/emmanueljoseph223300-dotcom</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/script-hive" target="_blank">linkedin.com/in/script-hive</a></p>
   </section>
 
-  <!-- ==== SIGN UP ==== -->
+  <!-- ===== SIGN UP ===== -->
   <section id="signup" class="form-section">
-    <h2>Sign Up</h2>
+    <h2>Create Your Account</h2>
     <form class="form-box">
       <label for="signup-name">Full Name</label>
       <input type="text" id="signup-name" placeholder="Enter your name" required />
+
       <label for="signup-email">Email</label>
       <input type="email" id="signup-email" placeholder="Enter your email" required />
+
       <label for="signup-password">Password</label>
       <input type="password" id="signup-password" placeholder="Enter a password" required />
-      <button type="submit">Sign Up</button>
-    </form>
-  </section>
 
-  <!-- ==== SIGN IN ==== -->
-  <section id="signin" class="form-section">
-    <h2>Sign In</h2>
-    <form class="form-box">
-      <label for="signin-email">Email</label>
-      <input type="email" id="signin-email" placeholder="Enter your email" required />
-      <label for="signin-password">Password</label>
-      <input type="password" id="signin-password" placeholder="Enter your password" required />
-      <button type="submit">Sign In</button>
+      <label>
+        <input type="checkbox" required /> I agree to the <a href="#">Terms & Conditions</a>
+      </label>
+
+      <button type="submit">Sign Up</button>
+      <p class="form-text">Already have an account? <a href="login.html">Login here</a></p>
     </form>
   </section>
 
@@ -100,7 +87,6 @@
   <footer>
     <p>© 2025 Script Hive. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
