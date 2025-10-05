@@ -189,4 +189,72 @@ footer {
   background: #111;
   color: #fff;
 }
+.hex-logo-wrapper {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+
+.hex-grid-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  font-family: 'Courier New', monospace;
+}
+
+.hex-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  transform: rotate(45deg);
+}
+
+.hex-cell {
+  width: 25px;
+  height: 25px;
+  background: #333;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hex-cell.active {
+  background: #FFA500;
+  animation: pulse 2s infinite;
+}
+
+.hex-cell.active::before {
+  content: '{ }';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.code-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFA500;
+  text-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #999;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
 
