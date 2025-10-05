@@ -16,3 +16,13 @@ document.querySelectorAll("form").forEach(form => {
     alert("✅ Form submitted successfully! (This is demo only)");
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const cells = document.querySelectorAll('.hex-cell');
+  setInterval(() => {
+    cells.forEach(cell => {
+      if (Math.random() > 0.6) {
+        cell.classList.toggle('active');
+      }
+    });
+  }, 1000);
+});
